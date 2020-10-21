@@ -3,10 +3,11 @@ using UnityEngine;
 
 public class Bomb : MonoBehaviour
 {
-    [SerializeField] private LayerMask explosionMask;
+    [SerializeField] private LayerMask explosionMask = default;
     [SerializeField] private float boomTimer = 2f;
     [SerializeField] private int explosionRadius = 3;
-    [SerializeField] private GameObject firePrefab;
+    [SerializeField] private GameObject firePrefab = default;
+    
     private void Start()
     {
         transform.DOShakeScale(0.3f, 0.2f, 10, 10f).SetLoops(-1);

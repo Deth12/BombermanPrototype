@@ -5,7 +5,6 @@ using DG.Tweening;
 public class BombermanController : MonoBehaviour
 {
     [SerializeField] private LayerMask obstaclesMask = default;
-    [SerializeField] private LayerMask explosionMask = default;
     [SerializeField] private Bomb bombPrefab = default;
 
     private bool isInMovement;
